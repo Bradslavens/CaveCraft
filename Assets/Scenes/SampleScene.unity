@@ -166,7 +166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1cd3ad5d5532854988f9ba3f8b07b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cube: {fileID: 1478553333740502183, guid: 8b90b651ecc07874ba5f2392782f3f0c, type: 3}
+  _perlinNoise: 0
+  _refinement: 0.1
+  _multiplier: 5
+  _cubes: 50
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
