@@ -11,8 +11,12 @@ public class CubeGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _cubePosition = new Vector3(transform.position.x, transform.position.y, transform.position.z + 1);
-        object p = Instantiate(_cube, _cubePosition, Quaternion.identity);
+        for(int x = -10; x <= 10; x++){   
+            for(int z = -10; z <= 10; z++){
+                float y = Random.Range(0f, 3f);
+                Instantiate(_cube, new Vector3(x,y,z), Quaternion.identity);
+            }    
+        }
     }
 
     // Update is called once per frame
